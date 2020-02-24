@@ -1,0 +1,52 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE composition PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<ui:composition xmlns="http://www.w3.org/1999/xhtml" 
+                xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+                template="./WEB-INF/layout/layout.xhtml">
+
+    <ui:param name="currentPage" value="register" />
+    <ui:define name="siteTitle">YSJSFCommerce</ui:define>
+    <ui:define name="pageTitle">Register</ui:define>
+    <ui:define name="jumbotronHeading">Register</ui:define>
+    <ui:define name="jumbotronLead"></ui:define>
+
+    <ui:define name="main">
+        <div class="row justify-content-center">
+            <div class="col-6 mb-4">
+
+                <!-- Register form -->
+                <form>
+
+                    <!-- first name -->
+                    <div class="form-group">
+                        <label for="firstName">First name</label>
+                        <input type="email" class="form-control" id="firstName" />
+                    </div>
+
+                    <!-- last name -->
+                    <div class="form-group">
+                        <label for="lastName">Last name</label>
+                        <input type="email" class="form-control" id="lastName" />
+                    </div>
+
+                    <!-- e-mail -->
+                    <div class="form-group">
+                        <label for="Email">Email address</label>
+                        <input type="email" class="form-control" id="Email" />
+                    </div>
+
+                    <!-- password -->
+                    <div class="form-group">
+                        <label for="Password">Password</label>
+                        <input type="password" class="form-control" id="Password" />
+                    </div>
+
+                    <!-- submit -->
+                    <button type="submit" class="btn btn-primary btn-block">Submit</button>
+                </form>
+
+            </div>
+        </div>
+    </ui:define>
+
+</ui:composition>

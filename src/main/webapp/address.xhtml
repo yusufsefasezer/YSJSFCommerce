@@ -1,0 +1,90 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE composition PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<ui:composition xmlns="http://www.w3.org/1999/xhtml" 
+                xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+                template="./WEB-INF/layout/layout.xhtml">
+
+    <ui:param name="currentPage" value="address" />
+    <ui:define name="siteTitle">YSJSFCommerce</ui:define>
+    <ui:define name="pageTitle">Address</ui:define>
+
+    <ui:define name="jumbotron">
+        <div class="container">
+            <h1 class="jumbotron-heading">Addresses
+                <sup>
+                    <a href="address-add.html" class="btn btn-primary btn-sm">
+                        <i class="fa fa-plus"></i> Add New
+                    </a>
+                </sup>
+            </h1>
+            <p class="lead text-muted mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt nulla illum eaque at minus amet neque odio asperiores aut rem nisi, magni officia sapiente quod ea, eligendi quae commodi tempore!</p>
+        </div>
+    </ui:define>
+
+    <ui:define name="main">
+        <div class="row">
+
+            <!-- address list -->
+            <section class="col">
+
+                <div class="row">
+
+                    <!-- address -->
+                    <div class="col-md-4 mb-3">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">Home</h5>
+                                <h6 class="card-subtitle my-2 text-muted">Turkey / Kocaeli / 41250</h6>
+                                <h6 class="card-subtitle my-2 text-muted">+90 538 693 45 33</h6>
+                                <h6 class="card-subtitle my-2 text-muted"></h6>
+                                <p class="card-text">Fatih Sultan Mehmet Mah. Sergen Sok. No: 7 / 2</p>
+                            </div>
+                            <div class="card-footer">
+                                <a href="#" class="card-link text-info">Edit</a>
+                                <a href="#" onclick="return confirm('Are you sure?')" class="card-link text-danger">Delete</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- address -->
+                    <div class="col-md-4 mb-3">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">Office</h5>
+                                <h6 class="card-subtitle my-2 text-muted">Turkey / Kocaeli / 41250</h6>
+                                <h6 class="card-subtitle my-2 text-muted">+90 538 693 45 33</h6>
+                                <h6 class="card-subtitle my-2 text-muted"></h6>
+                                <p class="card-text">Fatih Sultan Mehmet Mah. Sergen Sok. No: 7 / 2</p>
+                            </div>
+                            <div class="card-footer">
+                                <a href="#" class="card-link text-info">Edit</a>
+                                <a href="#" onclick="return confirm('Are you sure?')" class="card-link text-danger">Delete</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- address -->
+                    <div class="col-md-4 mb-3">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">Work</h5>
+                                <h6 class="card-subtitle my-2 text-muted">Turkey / Kocaeli / 41250</h6>
+                                <h6 class="card-subtitle my-2 text-muted">+90 538 693 45 33</h6>
+                                <h6 class="card-subtitle my-2 text-muted"></h6>
+                                <p class="card-text">Fatih Sultan Mehmet Mah. Sergen Sok. No: 7 / 2</p>
+                            </div>
+                            <div class="card-footer">
+                                <a href="#" class="card-link text-info">Edit</a>
+                                <a href="#" onclick="return confirm('Are you sure?')" class="card-link text-danger">Delete</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </section>
+
+        </div>
+    </ui:define>
+
+</ui:composition>

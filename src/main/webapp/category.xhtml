@@ -1,0 +1,54 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE composition PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<ui:composition xmlns="http://www.w3.org/1999/xhtml" 
+                xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+                template="./WEB-INF/layout/layout.xhtml"
+                xmlns:c="http://xmlns.jcp.org/jsp/jstl/core"
+                xmlns:component="http://xmlns.jcp.org/jsf/composite/component">
+
+    <ui:param name="currentPage" value="category" />
+    <ui:define name="siteTitle">YSJSFCommerce</ui:define>
+    <ui:define name="pageTitle">Category</ui:define>
+    <ui:define name="jumbotronHeading">Category Name</ui:define>
+    <ui:define name="jumbotronLead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt nulla illum eaque at minus amet neque odio asperiores aut rem nisi, magni officia sapiente quod ea, eligendi quae commodi tempore!</ui:define>
+
+    <ui:define name="main">
+        <div class="row">
+            <!-- sidebar -->
+            <aside class="col-md-3">
+
+                <div class="list-group">
+                    <a href="category.html" class="list-group-item">Category 1</a>
+                    <a href="category.html" class="list-group-item active">Category Name</a>
+                    <a href="category.html" class="list-group-item">Category 3</a>
+                </div>
+
+            </aside>
+
+            <!-- product list -->
+            <section class="col-md-9">
+
+                <div class="row">
+
+                    <c:forEach var="iter" begin="1" end="10">
+                        <!--product -->
+                        <component:product-card 
+                            productTitle="Product title ${11-iter}" 
+                            productDescription="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur!"
+                            productURL="product.xhtml"
+                            productPrice="$24.99"
+                            productClass="col-md-4 mb-3"
+                            productImageURL="#{iter % 2 == 0 ? 
+                                               'https://dummyimage.com/600x400/55595c/fff' 
+                                               : 
+                                               'https://dummyimage.com/600x400/000/fff'}" />
+                    </c:forEach>
+
+                </div>
+
+            </section>
+
+        </div>
+    </ui:define>
+
+</ui:composition>

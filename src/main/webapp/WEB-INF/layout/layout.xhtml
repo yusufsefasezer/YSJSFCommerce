@@ -1,0 +1,53 @@
+<?xml version='1.0' encoding='UTF-8' ?> 
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:h="http://xmlns.jcp.org/jsf/html">
+
+    <h:head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, shrink-to-fit=no" />
+        <title><ui:insert name="pageTitle">YSJSFCommerce</ui:insert> | <ui:insert name="siteTitle">YSJSFCommerce</ui:insert></title>
+        <link rel="stylesheet" href="//stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" />
+        <!--<link rel="stylesheet" href="//stackpath.bootstrapcdn.com/bootswatch/4.4.1/cerulean/bootstrap.min.css" />-->
+        <link href="//stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+    </h:head>
+
+    <h:body>
+
+        <!-- header -->
+        <header class="pt-5">
+            <ui:insert name="header">
+                <ui:include src="partial/header.xhtml" />
+            </ui:insert>
+        </header>
+
+        <!-- jumbotron -->
+        <section class="jumbotron text-center">
+            <ui:insert name="jumbotron">
+                <ui:include src="partial/jumbotron.xhtml" />
+            </ui:insert>
+        </section>
+
+        <ui:insert name="breadcrumb"></ui:insert>
+
+        <!-- main -->
+        <main class="container">
+            <ui:insert name="main">
+                <ui:include src="partial/main.xhtml" />
+            </ui:insert>
+        </main>
+
+        <!-- footer -->
+        <footer class="bg-dark py-3 text-light">
+            <ui:insert name="footer">
+                <ui:include src="partial/footer.xhtml" />
+            </ui:insert>
+        </footer>
+
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+    </h:body>
+
+</html>

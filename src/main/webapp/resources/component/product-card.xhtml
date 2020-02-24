@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:cc="http://xmlns.jcp.org/jsf/composite"
+      xmlns:h="http://xmlns.jcp.org/jsf/html">
+
+    <!-- INTERFACE -->
+    <cc:interface>
+        <cc:attribute name="productTitle" required="true" />
+        <cc:attribute name="productDescription" required="true" />
+        <cc:attribute name="productURL" required="true" />
+        <cc:attribute name="productPrice" required="true" />
+        <cc:attribute name="productImageURL" required="true" />
+        <cc:attribute name="productClass" required="true" />
+    </cc:interface>
+
+    <!-- IMPLEMENTATION -->
+    <cc:implementation>
+        <div class="#{cc.attrs.productClass}">
+            <div class="card h-100">
+                <h:link outcome="#{cc.attrs.productURL}">
+                    <h:graphicImage class="card-img-top" value="#{cc.attrs.productImageURL}" alt="#{cc.attrs.productTitle}" />
+                </h:link>
+                <div class="card-body">
+                    <h4 class="card-title">
+                        <h:link outcome="#{cc.attrs.productURL}" value="#{cc.attrs.productTitle}" />
+                    </h4>
+                    <p class="card-text">#{cc.attrs.productDescription}</p>
+                </div>
+                <div class="card-footer">
+                    <div class="row">
+                        <div class="col">
+                            <h5>#{cc.attrs.productPrice}</h5>
+                        </div>
+                        <div class="col">
+                            <button type="button" class="btn btn-sm btn-dark">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </cc:implementation>
+</html>
