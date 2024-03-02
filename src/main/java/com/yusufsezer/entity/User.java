@@ -1,9 +1,9 @@
 package com.yusufsezer.entity;
 
-import java.io.Serializable;
-import javax.persistence.Entity;
-import javax.persistence.Table;
 import com.yusufsezer.contract.BaseEntity;
+import jakarta.persistence.Entity;
+import jakarta.persistence.Table;
+import java.io.Serializable;
 
 @Entity
 @Table(name = "USERS")

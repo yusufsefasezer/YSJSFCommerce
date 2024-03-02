@@ -1,9 +1,9 @@
 package com.yusufsezer.entity;
 
 import com.yusufsezer.contract.BaseEntity;
+import jakarta.persistence.Entity;
+import jakarta.persistence.ManyToOne;
 import java.io.Serializable;
-import javax.persistence.Entity;
-import javax.persistence.ManyToOne;
 
 @Entity
 public class Category extends BaseEntity implements Serializable {

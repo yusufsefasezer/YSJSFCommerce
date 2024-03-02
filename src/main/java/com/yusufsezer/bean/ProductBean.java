@@ -2,11 +2,11 @@ package com.yusufsezer.bean;
 
 import com.yusufsezer.ejb.ProductService;
 import com.yusufsezer.entity.Product;
+import jakarta.annotation.PostConstruct;
+import jakarta.ejb.EJB;
+import jakarta.enterprise.context.Dependent;
+import jakarta.inject.Named;
 import java.util.List;
-import javax.annotation.PostConstruct;
-import javax.ejb.EJB;
-import javax.enterprise.context.Dependent;
-import javax.inject.Named;
 
 @Named
 @Dependent

@@ -2,11 +2,11 @@ package com.yusufsezer.entity;
 
 import com.yusufsezer.contract.BaseEntity;
 import com.yusufsezer.enumeration.OrderStatus;
+import jakarta.persistence.Column;
+import jakarta.persistence.Entity;
+import jakarta.persistence.OneToOne;
 import java.io.Serializable;
 import java.math.BigDecimal;
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.OneToOne;
 
 @Entity
 public class ProductOrder extends BaseEntity implements Serializable {
