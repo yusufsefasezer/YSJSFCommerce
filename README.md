@@ -1,6 +1,6 @@
 # YSJSFCommerce
 
-A JSF application developed to learn and use JSF, Primefaces, EJB, JPA, Java EE.
+A JSF application developed to learn and use JSF, Primefaces, EJB, JPA, Java/Jakarta EE.
 
 <div align="center">
 
